@@ -126,6 +126,7 @@
     <AndroidResource Include="Resources\values\MvxBindingAttributes.xml" />
     <AndroidResource Include="Resources\drawable\splash.png" />
     <AndroidResource Include="Resources\drawable\groceries.png" />
+    <AndroidResource Include="Resources\drawable\background.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GroceryShopper.Core\GroceryShopper.Core.csproj">
