@@ -13,3 +13,10 @@ The project contains:
 - Droid UI
 - Test project with pure Xamarin.UITest
 - Test project with Specflow + Xamarin.UITest
+
+
+Used frameworks:
+
+-  MvvmCross (including Plug-Ins)
+-  Xamarin Droid
+-  Specflow
