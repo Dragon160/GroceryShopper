@@ -7,13 +7,13 @@ using GroceryShopper.Core.ViewModels;
 namespace GroceryShopper.Droid.Activities
 {
     [Activity]
-    [MvxViewFor(typeof(FirstViewModel))]
-    public class FirstView : MvxActivity
+    [MvxViewFor(typeof(OverviewViewModel))]
+    public class OverviewActivity : MvxActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            SetContentView(Resource.Layout.FirstView);
+            SetContentView(Resource.Layout.Overview);
         }
     }
 }

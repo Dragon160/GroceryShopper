@@ -11,7 +11,7 @@ namespace GroceryShopper.Core
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 				
-            RegisterAppStart<ViewModels.FirstViewModel>();
+            RegisterAppStart<ViewModels.OverviewViewModel>();
         }
     }
 }
