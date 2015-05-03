@@ -89,9 +89,9 @@ this.FeatureBackground();
 #line 12
  testRunner.When("I click on the add item button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 13
-  testRunner.And("I enter data like \"7kg\" for amount and \"Sugar\" as type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("I enter data like \"7kg\" for amount and \"Apples\" as type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 14
- testRunner.Then("I expect that the item with \"7kg\" and \"Suger\" has been added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I expect that the item with \"7kg\" and \"Apples\" has been added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -108,9 +108,9 @@ this.FeatureBackground();
 #line 17
  testRunner.Given("I am on the overview screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 18
- testRunner.When("I want to delete the \"Roastbeaf\" item", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I want to delete the \"A nice Roastbeef\" item", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 19
- testRunner.Then("I expect that the item with \"Roastbeef\" has been deleted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I expect that the item with \"A nice Roastbeef\" has been deleted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

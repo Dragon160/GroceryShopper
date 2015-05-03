@@ -1,4 +1,5 @@
-﻿using Xamarin.UITest;
+﻿using System.Linq;
+using Xamarin.UITest;
 
 namespace GroceryShopper.SpecflowXamarinUITest.Screens
 {
@@ -23,8 +24,8 @@ namespace GroceryShopper.SpecflowXamarinUITest.Screens
 
         public void DeleteItem(string type)
         {
-            App.WaitForElement(v => v.Text(type));
-            App.Tap(v => v.Id("btnDeleteItem"));
+            App.WaitForElement(v => v.Text(type));           
+            App.Tap(v => v.Text("A nice Roastbeef").Parent(0).Child("Button"));
             App.WaitForElement(v => v.Text("Do you really want to delete this item?"));
             App.Tap(v => v.Text("OK"));           
         }
