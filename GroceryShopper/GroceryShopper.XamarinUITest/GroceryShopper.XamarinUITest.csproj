@@ -58,6 +58,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="UiConsole.cs" />
     <Compile Include="UITests.cs" />
     <Compile Include="XamarinUiTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
