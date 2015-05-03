@@ -13,7 +13,7 @@ namespace GroceryShopper.Core.Models
         private GroceryTypes _groceryType;
         private string _amount;
 
-        public int Id { get; set; }
+        public int Id { get; private set; }
 
         public string Notes
         {

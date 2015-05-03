@@ -26,6 +26,7 @@ namespace GroceryShopper.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Chance.MvvmCross.Plugins.UserInteraction.Droid.Resource.String.library_name = global::GroceryShopper.Droid.Resource.String.library_name;
 		}
 		
 		public partial class Attribute
@@ -87,14 +88,20 @@ namespace GroceryShopper.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f040000
-			public const int MvxBindingTagUnique = 2130968576;
+			// aapt resource value: 0x7f050000
+			public const int MvxBindingTagUnique = 2131034112;
 			
-			// aapt resource value: 0x7f040002
-			public const int btnAddGrocery = 2130968578;
+			// aapt resource value: 0x7f050004
+			public const int btnAddGrocery = 2131034116;
 			
-			// aapt resource value: 0x7f040001
-			public const int btnDeleteItem = 2130968577;
+			// aapt resource value: 0x7f050003
+			public const int btnDeleteItem = 2131034115;
+			
+			// aapt resource value: 0x7f050002
+			public const int btnSave = 2131034114;
+			
+			// aapt resource value: 0x7f050001
+			public const int spinnerChooseType = 2131034113;
 			
 			static Id()
 			{
@@ -110,13 +117,19 @@ namespace GroceryShopper.Droid
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int GroceryItem = 2130903040;
+			public const int AddItem = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Overview = 2130903041;
+			public const int GroceryItem = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int SplashScreen = 2130903042;
+			public const int Overview = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int SpinnerItem = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int SplashScreen = 2130903044;
 			
 			static Layout()
 			{
@@ -131,11 +144,14 @@ namespace GroceryShopper.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f050001
-			public const int ApplicationName = 2131034113;
+			// aapt resource value: 0x7f040002
+			public const int ApplicationName = 2130968578;
 			
-			// aapt resource value: 0x7f050000
-			public const int Hello = 2131034112;
+			// aapt resource value: 0x7f040001
+			public const int Hello = 2130968577;
+			
+			// aapt resource value: 0x7f040000
+			public const int library_name = 2130968576;
 			
 			static String()
 			{

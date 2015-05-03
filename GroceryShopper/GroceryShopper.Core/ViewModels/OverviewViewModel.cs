@@ -5,19 +5,6 @@ using GroceryShopper.Core.Models;
 
 namespace GroceryShopper.Core.ViewModels
 {
-    public static class InMemoryStorage
-    {
-        private static ObservableCollection<Grocery> _items = new ObservableCollection<Grocery>();
-
-        public static ObservableCollection<Grocery> Items
-        {
-            get { return _items; }
-            set { _items = value; }
-        }
-    }
-
-
-
     public class OverviewViewModel : MvxViewModel
     {
         private ICommand _addItemCommand;
@@ -31,6 +18,7 @@ namespace GroceryShopper.Core.ViewModels
         {
             get { return InMemoryStorage.Items; }
         }
+
         public override void Start()
         {
             base.Start();
@@ -42,10 +30,6 @@ namespace GroceryShopper.Core.ViewModels
 
             RaiseAllPropertiesChanged();
         }
-    }
 
-    public class NewItemViewModel : MvxViewModel
-    {
-        
     }
 }
