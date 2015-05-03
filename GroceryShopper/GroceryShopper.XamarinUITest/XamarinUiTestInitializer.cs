@@ -2,7 +2,7 @@
 
 namespace GroceryShopper.XamarinUITest
 {
-    public abstract class XamarinUiTest
+    public abstract class XamarinUiTestInitializer
     {
         private const string PathToApk = "../../../GroceryShopper.Droid/bin/Release/GroceryShopper.Droid.apk";
 
