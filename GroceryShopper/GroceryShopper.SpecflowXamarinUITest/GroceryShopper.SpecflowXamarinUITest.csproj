@@ -37,6 +37,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="TechTalk.SpecFlow">
       <HintPath>..\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll</HintPath>
@@ -58,6 +62,12 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="GroceryShopper.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GroceryShopper.feature</DependentUpon>
+    </Compile>
+    <Compile Include="GroceryShopperSteps.cs" />
     <Compile Include="Screens\NewItemScreen.cs" />
     <Compile Include="Screens\OverviewScreen.cs" />
     <Compile Include="Screens\ScreenBase.cs" />
@@ -66,6 +76,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="GroceryShopper.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>GroceryShopper.feature.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Choose>

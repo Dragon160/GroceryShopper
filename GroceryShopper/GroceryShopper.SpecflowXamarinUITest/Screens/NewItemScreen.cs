@@ -30,13 +30,13 @@ namespace GroceryShopper.SpecflowXamarinUITest.Screens
             App.Tap(v => v.Text("Save"));
         }
 
-        public NewItemScreen EnterUnfinishedItem(string amount, string note, string type)
+        public NewItemScreen EnterUnfinishedItem()
         {
             App.Tap(v => v.Class("MvxSpinner"));
             App.WaitForElement(v => v.Text("Other"));
-            App.Tap(v => v.Text(type));
+            App.Tap(v => v.Text("Other"));
 
-            App.EnterText(v => v.Id("editNotes"), note);
+            App.EnterText(v => v.Id("editNotes"), "Example note");
 
             App.Tap(v => v.Text("Save"));
 

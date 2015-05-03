@@ -29,9 +29,16 @@ namespace GroceryShopper.SpecflowXamarinUITest.Screens
             App.Tap(v => v.Text("OK"));           
         }
 
-        public void AssertItemIsDismissed(string type)
+        public void AssertItemHasBeenAdded(string amount, string type)
+        {
+            App.WaitForElement(v => v.Text(type));
+            App.WaitForElement(v => v.Text(amount));
+        }
+
+        public void AssertItemIsDeleted(string type)
         {
             App.WaitForNoElement(v => v.Text(type));
         }
+
     }
 }
