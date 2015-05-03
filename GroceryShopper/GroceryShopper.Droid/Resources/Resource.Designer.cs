@@ -103,6 +103,9 @@ namespace GroceryShopper.Droid
 			// aapt resource value: 0x7f050002
 			public const int btnSave = 2131034114;
 			
+			// aapt resource value: 0x7f050005
+			public const int imgBackground = 2131034117;
+			
 			// aapt resource value: 0x7f050001
 			public const int spinnerChooseType = 2131034113;
 			
