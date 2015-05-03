@@ -17,6 +17,7 @@
         android:layout_height="0dp"
         android:layout_weight="1">
         <EditText
+            android:id="@+id/editAmount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Amount (for e.g. '2kg')"
@@ -35,6 +36,7 @@
             local:MvxItemTemplate="@layout/spinneritem"
             local:MvxBind="ItemsSource AvailableGroceryTypes; SelectedItem GroceryType" />
         <EditText
+            android:id="@+id/editNotes"
             android:layout_marginTop="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

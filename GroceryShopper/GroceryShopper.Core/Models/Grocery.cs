@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Linq;
 using System.Windows.Input;
+using Chance.MvvmCross.Plugins.UserInteraction;
+using Cirrious.CrossCore;
 using Cirrious.MvvmCross.ViewModels;
 using GroceryShopper.Core.ViewModels;
 
@@ -57,7 +59,13 @@ namespace GroceryShopper.Core.Models
             {
                 return new MvxCommand(() =>
                 {
-                    InMemoryStorage.Items.Remove(InMemoryStorage.Items.FirstOrDefault(v => v.Id == Id));
+                    Mvx.Resolve<IUserInteraction>().Confirm("Do you really want to delete this item?", (v =>
+                    {
+                        if (v)
+                        {
+                            InMemoryStorage.Items.Remove(InMemoryStorage.Items.FirstOrDefault(a => a.Id == Id));
+                        }
+                    }));
                 });
             }
         }
