@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Choose your grocery:" />
-        <Spinner
+        <MvxSpinner
             android:id="@+id/spinnerChooseType"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
