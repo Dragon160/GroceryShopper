@@ -46,7 +46,7 @@
     <Compile Include="ViewModels\NewItemViewModel.cs" />
     <Compile Include="ViewModels\OverviewViewModel.cs" />
     <Compile Include="Models\Grocery.cs" />
-    <Compile Include="ViewModels\GroceryTypes.cs" />
+    <Compile Include="GroceryTypes.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Chance.MvvmCross.Plugins.UserInteraction">

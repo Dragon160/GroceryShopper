@@ -32,8 +32,8 @@ namespace GroceryShopper.SpecflowXamarinUITest
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "GroceryShopper", "In order to go shopping\nAs a customer of the grocery shopper app\nI want to add an" +
-                    "d delete shopping items", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "GroceryShopper", "In order to go shopping\r\nAs a customer of the grocery shopper app\r\nI want to add " +
+                    "and delete shopping items", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         

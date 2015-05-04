@@ -23,7 +23,7 @@ namespace GroceryShopper.Core.ViewModels
         {
             base.Start();
 
-            // testing
+            // default groceries
             GroceryItems.Add(new Grocery { Amount = "100g", GroceryType = GroceryTypes.Sugar, Notes = string.Empty});
             GroceryItems.Add(new Grocery { Amount = "2kg", GroceryType = GroceryTypes.Meat, Notes = "A nice Roastbeef" });
             GroceryItems.Add(new Grocery { Amount = "1L", GroceryType = GroceryTypes.Milk, Notes = string.Empty });

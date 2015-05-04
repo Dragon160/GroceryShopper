@@ -1,4 +1,4 @@
-namespace GroceryShopper.Core.ViewModels
+namespace GroceryShopper.Core
 {
     /// <summary>
     /// Extend to support more groceries
