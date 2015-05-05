@@ -12,7 +12,7 @@ namespace GroceryShopper.SpecflowXamarinUITest.Screens
             return this;
         }
 
-        public void EnterNewItem(string amount, string note, string type)
+        public NewItemScreen EnterNewItem(string amount, string note, string type)
         {
             App.EnterText(v => v.Id("editAmount"), amount);
             App.TapCoordinates(0, 0);
@@ -24,6 +24,8 @@ namespace GroceryShopper.SpecflowXamarinUITest.Screens
             App.EnterText(v => v.Id("editNotes"), note);
 
             App.Tap(v => v.Text("Save"));
+
+            return this;
         }
 
         public NewItemScreen EnterUnfinishedItem()
@@ -39,9 +41,10 @@ namespace GroceryShopper.SpecflowXamarinUITest.Screens
             return this;
         }
 
-        public void AssertSeeErrorMessage()
+        public NewItemScreen AssertSeeErrorMessage()
         {
             App.WaitForElement(v => v.Text("Please check your input"));
+            return this;
         }
     }
 }

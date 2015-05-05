@@ -16,6 +16,11 @@ namespace GroceryShopper.SpecflowXamarinUITest.Screens
             App = GroceryShopperFeature.App;
         }
 
+        public virtual void DoScreenshot(string stepTitle)
+        {
+            App.Screenshot(stepTitle);
+        }
+
         public abstract ScreenBase AssertIsOnScreen();
     }
 }

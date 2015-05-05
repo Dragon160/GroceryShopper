@@ -13,28 +13,34 @@ namespace GroceryShopper.SpecflowXamarinUITest.Screens
             return this;
         }
 
-        public void AddNewItem()
+        public OverviewScreen AddNewItem()
         {
             App.Tap(v => v.Id("btnAddItem"));
+            return this;
         }
 
-        public void DeleteItem(string type)
+        public OverviewScreen DeleteItem(string type)
         {
             App.WaitForElement(v => v.Text(type));           
             App.Tap(v => v.Text("A nice Roastbeef").Parent(0).Child("Button"));
             App.WaitForElement(v => v.Text("Do you really want to delete this item?"));
-            App.Tap(v => v.Text("OK"));           
+            App.Tap(v => v.Text("OK"));
+
+            return this;
         }
 
-        public void AssertItemHasBeenAdded(string amount, string type)
+        public OverviewScreen AssertItemHasBeenAdded(string amount, string type)
         {
             App.WaitForElement(v => v.Text(type));
             App.WaitForElement(v => v.Text(amount));
+
+            return this;
         }
 
-        public void AssertItemIsDeleted(string type)
+        public OverviewScreen AssertItemIsDeleted(string type)
         {
             App.WaitForNoElement(v => v.Text(type));
+            return this;
         }
 
     }
