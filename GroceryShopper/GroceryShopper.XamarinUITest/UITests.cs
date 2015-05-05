@@ -3,15 +3,22 @@ using Xamarin.UITest;
 
 namespace GroceryShopper.XamarinUITest
 {
-    [TestFixture]
+    [TestFixture(Platform.Android)]
+    //[TestFixture(Platform.iOS)]
     public class UITests
     {
+        private readonly Platform _platform;
         private IApp _app;
+
+        public UITests(Platform platform)
+        {
+            _platform = platform;
+        }
 
         [SetUp]
         public void TestSetup()
         {
-            _app = XamarinUiTestInitializer.ConfigureAndStart();
+            _app = XamarinUiTestInitializer.ConfigureAndStart(_platform, TestEnvironment.IsTestCloud);
         }
 
         [Test]

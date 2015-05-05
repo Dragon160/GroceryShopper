@@ -7,11 +7,6 @@ namespace GroceryShopper.SpecflowXamarinUITest
         private const string PathToApk = "../../../GroceryShopper.Droid/bin/Release/GroceryShopper.Droid.apk";
         private const string PathToIpa = "<Todo>";
 
-        //public static IApp ConfigureAndStart()
-        //{
-        //    return ConfigureApp.Android.ApkFile(PathToApk).EnableLocalScreenshots().StartApp();
-        //}
-
         public static IApp ConfigureAndStart(Platform platform, bool isTestCloud)
         {
             if (isTestCloud)

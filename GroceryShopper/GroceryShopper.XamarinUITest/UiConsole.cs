@@ -11,7 +11,7 @@ namespace GroceryShopper.XamarinUITest
         [SetUp]
         public void TestSetup()
         {
-            _app = XamarinUiTestInitializer.ConfigureAndStart();
+            _app = XamarinUiTestInitializer.ConfigureAndStart(Platform.Android, false);
         }
 
         [Test]
