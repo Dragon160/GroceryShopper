@@ -65,32 +65,20 @@ namespace GroceryShopper.SpecflowXamarinUITest
             testRunner.CollectScenarioErrors();
         }
         
-        public virtual void FeatureBackground()
-        {
-#line 6
-#line 7
- testRunner.Given("I started the app", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 8
- testRunner.Then("I am on the overview screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-        }
-        
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("I want to add an item")]
         public virtual void IWantToAddAnItem()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("I want to add an item", ((string[])(null)));
-#line 10
-this.ScenarioSetup(scenarioInfo);
 #line 6
-this.FeatureBackground();
-#line 11
+this.ScenarioSetup(scenarioInfo);
+#line 7
  testRunner.Given("I am on the overview screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 12
+#line 8
  testRunner.When("I click on the add item button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 13
+#line 9
   testRunner.And("I enter data like \"7kg\" for amount and \"Apples\" as type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 14
+#line 10
  testRunner.Then("I expect that the item with \"7kg\" and \"Apples\" has been added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -101,15 +89,13 @@ this.FeatureBackground();
         public virtual void IWantToDeleteAnItem()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("I want to delete an item", ((string[])(null)));
-#line 16
+#line 12
 this.ScenarioSetup(scenarioInfo);
-#line 6
-this.FeatureBackground();
-#line 17
+#line 13
  testRunner.Given("I am on the overview screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 18
+#line 14
  testRunner.When("I want to delete the \"A nice Roastbeef\" item", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 19
+#line 15
  testRunner.Then("I expect that the item with \"A nice Roastbeef\" has been deleted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -120,17 +106,15 @@ this.FeatureBackground();
         public virtual void IWantToAddAnNotValidItem()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("I want to add an not valid item", ((string[])(null)));
-#line 22
+#line 18
 this.ScenarioSetup(scenarioInfo);
-#line 6
-this.FeatureBackground();
-#line 23
+#line 19
  testRunner.Given("I am on the overview screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 24
+#line 20
  testRunner.When("I click on the add item button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 25
+#line 21
   testRunner.And("I enter not valid data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 26
+#line 22
  testRunner.Then("I expect to see an error message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

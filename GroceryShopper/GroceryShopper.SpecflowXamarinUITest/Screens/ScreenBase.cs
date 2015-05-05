@@ -11,9 +11,9 @@ namespace GroceryShopper.SpecflowXamarinUITest.Screens
     {
         protected readonly IApp App;
 
-        protected ScreenBase(IApp app)
+        protected ScreenBase()
         {
-            App = app;
+            App = GroceryShopperFeature.App;
         }
 
         public abstract ScreenBase AssertIsOnScreen();

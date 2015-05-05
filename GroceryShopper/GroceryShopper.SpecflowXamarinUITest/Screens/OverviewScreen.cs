@@ -13,10 +13,6 @@ namespace GroceryShopper.SpecflowXamarinUITest.Screens
             return this;
         }
 
-        public OverviewScreen(IApp app) : base(app)
-        {
-        }
-
         public void AddNewItem()
         {
             App.Tap(v => v.Id("btnAddItem"));

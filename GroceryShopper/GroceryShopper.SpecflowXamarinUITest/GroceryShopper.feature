@@ -3,10 +3,6 @@
 	As a customer of the grocery shopper app
 	I want to add and delete shopping items
 
-Background: I started the app
-	Given I started the app
-	Then I am on the overview screen
-
 Scenario: I want to add an item
 	Given I am on the overview screen
 	When I click on the add item button

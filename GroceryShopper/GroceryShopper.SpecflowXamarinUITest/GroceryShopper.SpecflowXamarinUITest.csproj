@@ -67,6 +67,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GroceryShopper.feature</DependentUpon>
     </Compile>
+    <Compile Include="GroceryShopperFeature.cs" />
     <Compile Include="GroceryShopperSteps.cs" />
     <Compile Include="Screens\NewItemScreen.cs" />
     <Compile Include="Screens\OverviewScreen.cs" />
