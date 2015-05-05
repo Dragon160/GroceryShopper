@@ -1,7 +1,10 @@
 using Android.App;
 using Android.OS;
+using Chance.MvvmCross.Plugins.UserInteraction;
+using Cirrious.CrossCore;
 using Cirrious.MvvmCross.ViewModels;
 using GroceryShopper.Core.ViewModels;
+using Java.Interop;
 
 namespace GroceryShopper.Droid.Activities
 {
@@ -13,6 +16,13 @@ namespace GroceryShopper.Droid.Activities
         {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Overview);
+        }
+        
+        [Export]
+        public string DemoFunctionForAppInvoke(string args)
+        {
+            Mvx.Resolve<IUserInteraction>().Alert("Yay.. I have been invoked from outside");
+            return "Worked";
         }
     }
 }
