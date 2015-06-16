@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GroceryShopper.Forms.Pages.NewItemPage">
+  <StackLayout Orientation="Vertical">
+    <Label
+      Text="Add a new Item:"
+      FontSize="Large"
+      FontAttributes="Bold"/>
+    <Entry
+      Placeholder="Amount (for e.g. '2kg')"
+      Text="{Binding Amount}"/>
+    <Label
+      Text="Choose your grocery:"/>
+    
+    <Picker Title="Grocery Type"
+            SelectedIndex="{Binding GroceryTypeIndex}">
+      <Picker.Items>
+        <x:String>Sugar</x:String>
+        <x:String>Milk</x:String>
+        <x:String>Meat</x:String>
+        <x:String>Fish</x:String>
+        <x:String>Apples</x:String>
+        <x:String>Tomatos</x:String>
+        <x:String>Other</x:String>
+      </Picker.Items>
+    </Picker>
+
+    <Entry Placeholder="Additional notes"
+           Text="{Binding Notes}"/>
+
+    <Button Text="Save"
+            BorderWidth="1"
+            Command="{Binding SaveCommand}"/>
+  </StackLayout>
+</ContentPage>
