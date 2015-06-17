@@ -36,6 +36,6 @@
         </DataTemplate>
       </ListView.ItemTemplate>
     </ListView>
-    <Image Grid.Row="2" Source="background.png" />
+    <Image Grid.Row="2" Source="background.png" BackgroundColor="White"/>
   </Grid>
 </ContentPage>
