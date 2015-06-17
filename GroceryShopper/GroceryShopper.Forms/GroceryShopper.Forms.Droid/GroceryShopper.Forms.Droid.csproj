@@ -48,14 +48,6 @@
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Chance.MvvmCross.Plugins.UserInteraction, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Chance.MvvmCross.Plugins.UserInteraction.1.1.4\lib\MonoAndroid\Chance.MvvmCross.Plugins.UserInteraction.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Chance.MvvmCross.Plugins.UserInteraction.Droid, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Chance.MvvmCross.Plugins.UserInteraction.1.1.4\lib\MonoAndroid\Chance.MvvmCross.Plugins.UserInteraction.Droid.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Cheesebaron.MvxPlugins.FormsPresenters.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Cheesebaron.MvxPlugins.FormsPresenters.0.0.2\lib\MonoAndroid10\Cheesebaron.MvxPlugins.FormsPresenters.Core.dll</HintPath>
       <Private>True</Private>
@@ -103,11 +95,7 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
     <Reference Include="Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xamarin.Android.Support.v4.22.2.0.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Xamarin.Android.Support.v7.AppCompat, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xamarin.Android.Support.v7.AppCompat.22.2.0.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+      <HintPath>..\..\packages\Xamarin.Android.Support.v4.21.0.3.0\lib\MonoAndroid10\Xamarin.Android.Support.v4.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -128,7 +116,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bootstrap\UserInteractionPluginBootstrap.cs" />
+    <Compile Include="DebugTrace.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -137,9 +125,9 @@
     <Compile Include="SplashScreen.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\SplashScreen.axml" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\icon.png" />
@@ -151,7 +139,9 @@
     <Content Include="Properties\AndroidManifest.xml" />
     <AndroidResource Include="Resources\drawable\background.png" />
     <AndroidResource Include="Resources\drawable\groceries.png" />
-    <Content Include="ToDo-FormsPresenters\_Setup.txt" />
+    <AndroidResource Include="Resources\values\SplashStyle.xml" />
+    <AndroidResource Include="Resources\values\MvxBindingAttributes.xml" />
+    <AndroidResource Include="Resources\drawable\splash.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GroceryShopper.Forms\GroceryShopper.Forms.csproj">
