@@ -6,6 +6,7 @@ using Cirrious.MvvmCross.Touch.Platform;
 using Cirrious.MvvmCross.ViewModels;
 using Foundation;
 using UIKit;
+using Xamarin;
 
 namespace GroceryShopper.Forms.iOS
 {
@@ -32,6 +33,10 @@ namespace GroceryShopper.Forms.iOS
 
             var startup = Mvx.Resolve<IMvxAppStart>();
             startup.Start();
+
+
+            Calabash.Start();
+
 
             _window.MakeKeyAndVisible();
 

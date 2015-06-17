@@ -4,6 +4,7 @@ using Xamarin.UITest;
 namespace GroceryShopper.SpecflowXamarinUITest
 {
     [TestFixture(Platform.Android)]
+    [TestFixture(Platform.iOS)]
     public partial class GroceryShopperFeature
     {
         /// <summary>
