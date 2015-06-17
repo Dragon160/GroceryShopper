@@ -2,7 +2,6 @@ using Cheesebaron.MvxPlugins.FormsPresenters.Core;
 using Cirrious.MvvmCross.Touch.Platform;
 using Cirrious.MvvmCross.Touch.Views.Presenters;
 using Cirrious.MvvmCross.ViewModels;
-using GroceryShopper.Core;
 using UIKit;
 
 namespace GroceryShopper.Forms.iOS
