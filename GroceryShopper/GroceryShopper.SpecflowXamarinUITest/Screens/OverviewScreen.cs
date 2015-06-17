@@ -7,15 +7,15 @@ namespace GroceryShopper.SpecflowXamarinUITest.Screens
     {
         public override ScreenBase AssertIsOnScreen()
         {
-            App.WaitForElement(v => v.Id("btnAddItem"));
-            App.WaitForElement(v => v.Id("imgBackground"));
+            App.WaitForElement(v => v.Marked("btnAddItem"));
+            App.WaitForElement(v => v.Marked("imgBackground"));
 
             return this;
         }
 
         public OverviewScreen AddNewItem()
         {
-            App.Tap(v => v.Id("btnAddItem"));
+            App.Tap(v => v.Marked("btnAddItem"));
             return this;
         }
 

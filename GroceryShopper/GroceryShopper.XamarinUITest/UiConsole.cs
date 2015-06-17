@@ -19,6 +19,9 @@ namespace GroceryShopper.XamarinUITest
         public void StartREPL()
         {
             _app.Repl();
+            _app.WaitForElement(v => v.Marked("btnAddItem"));
+            _app.Tap(v => v.Marked("btnAddItem")); 
+            _app.Repl();
         }
     }
 }

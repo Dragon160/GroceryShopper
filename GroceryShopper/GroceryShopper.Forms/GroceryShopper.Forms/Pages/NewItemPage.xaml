@@ -7,11 +7,8 @@
       Text="Add a new Item:"
       FontSize="Large"
       FontAttributes="Bold"/>
-    <Entry
-      Placeholder="Amount (for e.g. '2kg')"
-      Text="{Binding Amount}"/>
-    <Label
-      Text="Choose your grocery:"/>
+    <Entry StyleId="editAmount" Placeholder="Amount (for e.g. '2kg')" Text="{Binding Amount}"/>
+    <Label  Text="Choose your grocery:"/>
     
     <Picker Title="Grocery Type"
             SelectedIndex="{Binding GroceryTypeIndex}">
@@ -26,11 +23,8 @@
       </Picker.Items>
     </Picker>
 
-    <Entry Placeholder="Additional notes"
-           Text="{Binding Notes}"/>
+    <Entry Placeholder="Additional notes" StyleId="editNotes" Text="{Binding Notes}"/>
 
-    <Button Text="Save"
-            BorderWidth="1"
-            Command="{Binding SaveCommand}"/>
+    <Button StyleId="btnSave" Text="Save" BorderWidth="1" Command="{Binding SaveCommand}"/>
   </StackLayout>
 </ContentPage>

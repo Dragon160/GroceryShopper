@@ -6,7 +6,7 @@ namespace GroceryShopper.SpecflowXamarinUITest.Screens
     {
         public override ScreenBase AssertIsOnScreen()
         {
-            App.WaitForElement(v => v.Id("btnSave"));
+            App.WaitForElement(v => v.Marked("btnSave"));
             App.WaitForElement(v => v.Text("Add a new Item:"));
 
             return this;
@@ -14,14 +14,14 @@ namespace GroceryShopper.SpecflowXamarinUITest.Screens
 
         public NewItemScreen EnterNewItem(string amount, string note, string type)
         {
-            App.EnterText(v => v.Id("editAmount"), amount);
+            App.EnterText(v => v.Marked("editAmount"), amount);
             App.TapCoordinates(0, 0);
 
-            App.Tap(v => v.Class("MvxSpinner"));
-            App.WaitForElement(v => v.Text("Other"));
-            App.Tap(v => v.Text(type));
+            App.Tap(v => v.Class("PickerRenderer"));            
+            App.WaitForElement(v => v.Text("Sugar"));
+            App.Tap(v => v.Text("OK"));
 
-            App.EnterText(v => v.Id("editNotes"), note);
+            App.EnterText(v => v.Marked("editNotes"), note);
 
             App.Tap(v => v.Text("Save"));
 
@@ -30,11 +30,12 @@ namespace GroceryShopper.SpecflowXamarinUITest.Screens
 
         public NewItemScreen EnterUnfinishedItem()
         {
-            App.Tap(v => v.Class("MvxSpinner"));
-            App.WaitForElement(v => v.Text("Other"));
-            App.Tap(v => v.Text("Other"));
+            App.Tap(v => v.Class("PickerRenderer"));
+            App.WaitForElement(v => v.Text("Sugar"));
+            App.Tap(v => v.Text("Sugar"));
+            App.Tap(v => v.Text("OK"));
 
-            App.EnterText(v => v.Id("editNotes"), "Example note");
+            App.EnterText(v => v.Marked("editNotes"), "Example note");
 
             App.Tap(v => v.Text("Save"));
 

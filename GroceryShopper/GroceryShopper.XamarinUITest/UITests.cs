@@ -25,7 +25,7 @@ namespace GroceryShopper.XamarinUITest
         public void AssertOverviewScreen()
         {
             _app.WaitForElement(v => v.Button("btnAddItem"));
-            _app.WaitForElement(v => v.Id("imgBackground"));
+            _app.WaitForElement(v => v.Marked("imgBackground"));
         }
 
         [Test]
@@ -40,7 +40,7 @@ namespace GroceryShopper.XamarinUITest
         public void DeleteSugar()
         {
             _app.WaitForElement(v => v.Text("Sugar"));
-            _app.Tap(v => v.Id("btnDeleteItem"));
+            _app.Tap(v => v.Marked("btnDeleteItem"));
             _app.WaitForElement(v => v.Text("Do you really want to delete this item?"));            
             _app.Tap(v => v.Text("OK"));
             _app.WaitForNoElement(v => v.Text("Sugar"));
@@ -50,9 +50,9 @@ namespace GroceryShopper.XamarinUITest
         public void AddNewItemUnfinished()
         {
             // Act
-            _app.Tap(v => v.Id("btnAddItem"));
+            _app.Tap(v => v.Marked("btnAddItem"));
 
-            _app.EnterText(v => v.Id("editNotes"), "Fresh Salmon");
+            _app.EnterText(v => v.Marked("editNotes"), "Fresh Salmon");
             _app.TapCoordinates(0, 0);
 
             _app.Tap(v => v.Text("Save"));
@@ -65,16 +65,16 @@ namespace GroceryShopper.XamarinUITest
         public void AddNewItem()
         {
             // Act
-            _app.Tap(v => v.Id("btnAddItem"));
-            
-            _app.EnterText(v => v.Id("editAmount"), "4");
+            _app.Tap(v => v.Marked("btnAddItem"));
+
+            _app.EnterText(v => v.Marked("editAmount"), "4");
             _app.TapCoordinates(0,0);
 
-            _app.Tap(v => v.Class("MvxSpinner"));
-            _app.WaitForElement(v => v.Text("Other"));
-            _app.Tap(v => v.Text("Fish"));
+            _app.Tap(v => v.Class("PickerRenderer"));
+            _app.WaitForElement(v => v.Text("Sugar"));
+            _app.Tap(v => v.Text("Sugar"));
 
-            _app.EnterText(v => v.Id("editNotes"), "Fresh Salmon");
+            _app.EnterText(v => v.Marked("editNotes"), "Fresh Salmon");
 
             _app.Tap(v => v.Text("Save"));
 

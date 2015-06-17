@@ -6,8 +6,8 @@
 Scenario: I want to add an item
 	Given I am on the overview screen
 	When I click on the add item button
-		And I enter data like "7kg" for amount and "Apples" as type
-	Then I expect that the item with "7kg" and "Apples" has been added
+		And I enter data like "7kg" for amount and "Sugar" as type
+	Then I expect that the item with "7kg" and "Sugar" has been added
 
 Scenario: I want to delete an item
 	Given I am on the overview screen

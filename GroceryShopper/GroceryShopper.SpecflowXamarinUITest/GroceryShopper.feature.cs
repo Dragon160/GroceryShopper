@@ -77,9 +77,9 @@ this.ScenarioSetup(scenarioInfo);
 #line 8
  testRunner.When("I click on the add item button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 9
-  testRunner.And("I enter data like \"7kg\" for amount and \"Apples\" as type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("I enter data like \"7kg\" for amount and \"Sugar\" as type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 10
- testRunner.Then("I expect that the item with \"7kg\" and \"Apples\" has been added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I expect that the item with \"7kg\" and \"Sugar\" has been added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

@@ -10,7 +10,7 @@
       <RowDefinition Height="Auto" />
     </Grid.RowDefinitions>
     <Button
-    	Grid.Row="0"
+    	Grid.Row="0" StyleId="btnAddItem"
     	Text="Add item"
       BorderWidth="1"
       Command="{Binding AddItemCommand}"/>
@@ -36,6 +36,6 @@
         </DataTemplate>
       </ListView.ItemTemplate>
     </ListView>
-    <Image Grid.Row="2" Source="background.png" BackgroundColor="White"/>
+    <Image Grid.Row="2" StyleId="imgBackground" Source="background.png" BackgroundColor="White"/>
   </Grid>
 </ContentPage>

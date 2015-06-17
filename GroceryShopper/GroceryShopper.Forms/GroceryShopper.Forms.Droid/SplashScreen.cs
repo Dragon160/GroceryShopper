@@ -41,10 +41,10 @@ namespace GroceryShopper.Forms.Droid
             // Leverage controls' StyleId attrib. to Xamarin.UITest
             Xamarin.Forms.Forms.ViewInitialized += (object sender, ViewInitializedEventArgs e) =>
             {
-                //if (!string.IsNullOrWhiteSpace(e.View.StyleId))
-                //{
-                //    e.NativeView.ContentDescription = e.View.StyleId;
-                //}
+                if (!string.IsNullOrWhiteSpace(e.View.StyleId))
+                {
+                    e.NativeView.ContentDescription = e.View.StyleId;
+                }
             };
 
             base.OnCreate(bundle);
