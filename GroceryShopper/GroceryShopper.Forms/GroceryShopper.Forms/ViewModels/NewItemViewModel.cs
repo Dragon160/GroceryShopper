@@ -4,7 +4,6 @@ using System.Windows.Input;
 using Chance.MvvmCross.Plugins.UserInteraction;
 using Cirrious.CrossCore;
 using Cirrious.MvvmCross.ViewModels;
-using GroceryShopper.Core;
 using GroceryShopper.Forms.Models;
 
 namespace GroceryShopper.Forms.ViewModels

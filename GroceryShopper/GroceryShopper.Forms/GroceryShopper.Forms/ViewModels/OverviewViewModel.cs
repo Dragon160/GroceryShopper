@@ -1,7 +1,6 @@
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 using Cirrious.MvvmCross.ViewModels;
-using GroceryShopper.Core;
 using GroceryShopper.Forms.Models;
 
 namespace GroceryShopper.Forms.ViewModels

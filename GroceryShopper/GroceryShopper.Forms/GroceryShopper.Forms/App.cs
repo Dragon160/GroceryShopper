@@ -1,7 +1,7 @@
 using Cirrious.CrossCore.IoC;
 using GroceryShopper.Forms.ViewModels;
 
-namespace GroceryShopper.Core
+namespace GroceryShopper.Forms
 {
     public class App : Cirrious.MvvmCross.ViewModels.MvxApplication
     {
