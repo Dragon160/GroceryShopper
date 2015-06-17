@@ -5,7 +5,7 @@ namespace GroceryShopper.SpecflowXamarinUITest
     public abstract class XamarinUiTestInitializer
     {
         private const string PathToApk = "../../../GroceryShopper.Forms/GroceryShopper.Forms.Droid/bin/Release/GroceryShopper.Forms.Droid-Signed.apk";
-        private const string PathToIpa = "../../../GroceryShopper.Forms/GroceryShopper.Forms.Droid/bin/Release/GroceryShopper.Forms.Droid.ipa";
+        private const string PathToApp = "../../../GroceryShopper.Forms/GroceryShopper.Forms.Droid/bin/Release/GroceryShopper.Forms.iOS.app";
 
         public static IApp ConfigureAndStart(Platform platform, bool isTestCloud)
         {
@@ -16,7 +16,7 @@ namespace GroceryShopper.SpecflowXamarinUITest
 
             return platform == Platform.Android
                 ? (IApp) ConfigureApp.Android.ApkFile(PathToApk).EnableLocalScreenshots().StartApp()
-                : ConfigureApp.iOS.AppBundle(PathToIpa).EnableLocalScreenshots().StartApp();
+                : ConfigureApp.iOS.AppBundle(PathToApp).EnableLocalScreenshots().StartApp();
         }
     }
 }
