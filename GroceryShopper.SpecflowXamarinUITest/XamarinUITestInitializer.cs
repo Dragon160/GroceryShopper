@@ -5,7 +5,7 @@ namespace GroceryShopper.SpecflowXamarinUITest
     public abstract class XamarinUiTestInitializer
     {
         private const string PathToApk = "../../../GroceryShopper.Forms/GroceryShopper.Forms.Droid/bin/Release/GroceryShopper.Forms.Droid-Signed.apk";
-        private const string PathToApp = "../../../GroceryShopper.Forms/GroceryShopper.Forms.Droid/bin/Release/GroceryShopper.Forms.iOS.app";
+        private const string PathToApp = "../../../GroceryShopper.Forms/GroceryShopper.Forms.Droid/bin/Release/GroceryShopperFormsiOS.app";
 
         public static IApp ConfigureAndStart(Platform platform, bool isTestCloud)
         {
