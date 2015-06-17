@@ -237,7 +237,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GroceryShopper.Forms\GroceryShopper.Forms\GroceryShopper.Forms.csproj">
+    <ProjectReference Include="..\GroceryShopper.Forms\GroceryShopper.Forms.csproj">
       <Project>{04eabc21-d90e-4c3f-9ea4-b40b40a987b3}</Project>
       <Name>GroceryShopper.Forms</Name>
     </ProjectReference>

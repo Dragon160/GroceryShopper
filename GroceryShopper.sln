@@ -14,11 +14,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C6B252
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroceryShopper.SpecflowXamarinUITest", "GroceryShopper.SpecflowXamarinUITest\GroceryShopper.SpecflowXamarinUITest.csproj", "{30976B60-2884-4662-8D64-1FADA0901822}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroceryShopper.Forms", "GroceryShopper.Forms\GroceryShopper.Forms\GroceryShopper.Forms.csproj", "{04EABC21-D90E-4C3F-9EA4-B40B40A987B3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroceryShopper.Forms", "GroceryShopper.Forms\GroceryShopper.Forms.csproj", "{04EABC21-D90E-4C3F-9EA4-B40B40A987B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroceryShopper.Forms.iOS", "GroceryShopper.Forms\GroceryShopper.Forms.iOS\GroceryShopper.Forms.iOS.csproj", "{FDE69E32-179E-4698-8695-E95A807BDBF3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroceryShopper.Forms.iOS", "GroceryShopper.Forms.iOS\GroceryShopper.Forms.iOS.csproj", "{FDE69E32-179E-4698-8695-E95A807BDBF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroceryShopper.Forms.Droid", "GroceryShopper.Forms\GroceryShopper.Forms.Droid\GroceryShopper.Forms.Droid.csproj", "{D5D80E76-D582-49EB-BD2D-1077FFFEDC23}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroceryShopper.Forms.Droid", "GroceryShopper.Forms.Droid\GroceryShopper.Forms.Droid.csproj", "{D5D80E76-D582-49EB-BD2D-1077FFFEDC23}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Forms", "Forms", "{4892383E-2A9D-4618-9716-A9DBFE9C6ABE}"
 EndProject
