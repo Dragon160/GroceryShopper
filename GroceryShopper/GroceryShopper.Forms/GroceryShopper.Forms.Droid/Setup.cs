@@ -6,7 +6,6 @@ using Cirrious.MvvmCross.Droid.Platform;
 using Cirrious.MvvmCross.Droid.Views;
 using Cirrious.MvvmCross.ViewModels;
 using Cirrious.MvvmCross.Views;
-using GroceryShopper.Core;
 
 namespace GroceryShopper.Forms.Droid
 {

@@ -46,6 +46,8 @@
       <DependentUpon>OverviewPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\FakedService.cs" />
+    <Compile Include="Interfaces\IFakedService.cs" />
     <Compile Include="ViewModels\NewItemViewModel.cs" />
     <Compile Include="ViewModels\OverviewViewModel.cs" />
   </ItemGroup>

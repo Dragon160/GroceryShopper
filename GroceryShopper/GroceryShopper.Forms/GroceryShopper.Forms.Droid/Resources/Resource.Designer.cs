@@ -26,7 +26,6 @@ namespace GroceryShopper.Forms.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Chance.MvvmCross.Plugins.UserInteraction.Droid.Resource.String.library_name = global::GroceryShopper.Forms.Droid.Resource.String.library_name;
 			global::Xamarin.Forms.Platform.Resource.String.ApplicationName = global::GroceryShopper.Forms.Droid.Resource.String.ApplicationName;
 			global::Xamarin.Forms.Platform.Resource.String.Hello = global::GroceryShopper.Forms.Droid.Resource.String.Hello;
 		}
