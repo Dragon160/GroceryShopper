@@ -21,10 +21,12 @@ namespace GroceryShopper.SpecflowXamarinUITest.Screens
 
         public OverviewScreen DeleteItem(string type)
         {
-            App.WaitForElement(v => v.Text(type));           
-            App.Tap(v => v.Text("A nice Roastbeef").Parent(0).Child("Button"));
-            App.WaitForElement(v => v.Text("Do you really want to delete this item?"));
+            App.WaitForElement(v => v.Text(type));
+            App.Tap(v => v.Marked("btnDeleteItem"));
+            App.WaitForElement(v => v.Text("OK"));
             App.Tap(v => v.Text("OK"));
+            App.WaitForNoElement(v => v.Text(type));
+
 
             return this;
         }

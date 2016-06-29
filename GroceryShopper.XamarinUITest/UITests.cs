@@ -41,7 +41,7 @@ namespace GroceryShopper.XamarinUITest
         {
             _app.WaitForElement(v => v.Text("Sugar"));
             _app.Tap(v => v.Marked("btnDeleteItem"));
-            _app.WaitForElement(v => v.Text("Do you really want to delete this item?"));            
+            _app.WaitForElement(v => v.Text("OK"));            
             _app.Tap(v => v.Text("OK"));
             _app.WaitForNoElement(v => v.Text("Sugar"));
         }
@@ -73,6 +73,8 @@ namespace GroceryShopper.XamarinUITest
             _app.Tap(v => v.Class("PickerRenderer"));
             _app.WaitForElement(v => v.Text("Sugar"));
             _app.Tap(v => v.Text("Sugar"));
+
+            _app.Tap(v => v.Text("OK"));
 
             _app.EnterText(v => v.Marked("editNotes"), "Fresh Salmon");
 

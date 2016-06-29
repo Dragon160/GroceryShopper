@@ -1,5 +1,5 @@
 ﻿using System;
-
+using Acr.UserDialogs;
 using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
@@ -28,6 +28,9 @@ namespace GroceryShopper.Forms.Droid
 
             var presenter = Mvx.Resolve<IMvxViewPresenter>() as MvxFormsDroidPagePresenter;
             presenter.MvxFormsApp = mvxFormsApp;
+
+
+            UserDialogs.Init(this);
 
             Mvx.Resolve<IMvxAppStart>().Start();
         }

@@ -11,8 +11,8 @@ Scenario: I want to add an item
 
 Scenario: I want to delete an item
 	Given I am on the overview screen
-	When I want to delete the "A nice Roastbeef" item
-	Then I expect that the item with "A nice Roastbeef" has been deleted
+	When I want to delete the "Sugar" item
+	Then I expect that the item with "Sugar" has been deleted
 
 
 Scenario: I want to add an not valid item

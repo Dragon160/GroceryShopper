@@ -11,7 +11,7 @@ namespace GroceryShopper.Forms
                 .EndingWith("Service")
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
-				
+
             RegisterAppStart<OverviewViewModel>();
         }
     }

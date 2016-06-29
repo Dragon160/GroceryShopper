@@ -30,7 +30,7 @@
               <Label Grid.Column="0" Text="{Binding Amount}" HorizontalOptions="Center"></Label>
               <Label Grid.Column="1" Text="{Binding GroceryType}" HorizontalOptions="Center"></Label>
               <Label Grid.Column="2" Text="{Binding Notes}" HorizontalOptions="Center"></Label>
-              <Button Grid.Column="3" Text="X" Command="{Binding DeleteItemCommand}" HorizontalOptions="Center"/>
+              <Button Grid.Column="3" Text="X" Command="{Binding DeleteItemCommand}" HorizontalOptions="Center" StyleId="btnDeleteItem"/>
             </Grid>
           </ViewCell>
         </DataTemplate>

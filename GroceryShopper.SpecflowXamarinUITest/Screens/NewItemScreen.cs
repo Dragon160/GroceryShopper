@@ -19,6 +19,7 @@ namespace GroceryShopper.SpecflowXamarinUITest.Screens
 
             App.Tap(v => v.Class("PickerRenderer"));            
             App.WaitForElement(v => v.Text("Sugar"));
+
             App.Tap(v => v.Text("OK"));
 
             App.EnterText(v => v.Marked("editNotes"), note);

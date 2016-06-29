@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Input;
-using Chance.MvvmCross.Plugins.UserInteraction;
+using Acr.UserDialogs;
 using Cirrious.CrossCore;
 using Cirrious.MvvmCross.ViewModels;
 using GroceryShopper.Forms.Models;
@@ -52,7 +52,7 @@ namespace GroceryShopper.Forms.ViewModels
         {
             if (ValidateForFalse())
             {
-                Mvx.Resolve<IUserInteraction>().Alert("Please check your input");
+                UserDialogs.Instance.Alert("Please check your input");
                 return;
             }
 

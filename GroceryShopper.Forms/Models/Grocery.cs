@@ -1,9 +1,10 @@
 using System;
 using System.Linq;
 using System.Windows.Input;
-using Chance.MvvmCross.Plugins.UserInteraction;
+using Acr.UserDialogs;
 using Cirrious.CrossCore;
 using Cirrious.MvvmCross.ViewModels;
+using Xamarin.Forms;
 
 namespace GroceryShopper.Forms.Models
 {
@@ -31,7 +32,7 @@ namespace GroceryShopper.Forms.Models
             set
             {
                 _groceryType = value;
-                RaisePropertyChanged(()=> GroceryType);
+                RaisePropertyChanged(() => GroceryType);
             }
         }
 
@@ -48,24 +49,26 @@ namespace GroceryShopper.Forms.Models
         public Grocery()
         {
             Id = new Random(DateTime.Now.Millisecond).Next();
-        }
 
-
-        public ICommand DeleteItemCommand
-        {
-            get
+            var confirmConfig = new ConfirmConfig()
             {
-                return new MvxCommand(() =>
-                {
-                    Mvx.Resolve<IUserInteraction>().Confirm("Do you really want to delete this item?", (v =>
+                CancelText = "Cancel",
+                Message = $"Do your really want to remove the {GroceryType}?",
+                OkText = "OK",
+                OnConfirm =
+                    v =>
                     {
                         if (v)
                         {
                             InMemoryStorage.Items.Remove(InMemoryStorage.Items.FirstOrDefault(a => a.Id == Id));
                         }
-                    }));
-                });
-            }
+                    }
+            };
+
+            DeleteItemCommand = new Command(()=> UserDialogs.Instance.Confirm(confirmConfig));
         }
+
+
+        public ICommand DeleteItemCommand { get; set; }
     }
 }
